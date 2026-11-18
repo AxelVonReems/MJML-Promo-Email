@@ -1,0 +1,346 @@
+<mjml lang="en">
+  <mj-head>
+    <!-- Global defaults: apply to every component unless overridden on the tag -->
+    <mj-attributes>
+      <mj-all font-family="Arial, Helvetica, sans-serif" />
+      <mj-text color="#2B2A33" font-size="16px" line-height="24px" />
+
+      <!-- Reusable attribute sets -->
+      <mj-class name="dark" background-color="#2B2A33" />
+      <mj-class name="nav-link" align="center" font-size="14px" padding="8px" />
+      <mj-class name="center" align="center" />
+      <mj-class name="grid-row" padding="0 12px" />
+      <mj-class name="grid-img" padding="6px" fluid-on-mobile="true" />
+      <mj-class name="accent" background-color="#1F6F6B" />
+      <mj-class name="pill"
+        css-class="pill-btn"
+        background-color="#D6EDEA"
+        color="#2B2A33"
+        font-size="13px"
+        font-weight="bold"
+        inner-padding="8px 0"
+        border-radius="10px"
+        width="100%"
+        padding="6px"
+      />
+      <mj-class name="pill-row" padding="0 18px" />
+      <mj-class name="footer-icon" width="24px" padding="0 0 8px" />
+      <mj-class name="footer-label"
+        css-class="footer"
+        align="center"
+        font-size="12px"
+        line-height="16px"
+        padding="0 4px"
+      />
+      <mj-class name="legal-text" font-size="12px" line-height="18px" color="#B8B6C2" />
+    </mj-attributes>
+
+    <!-- Inlined at build time for clients that strip <style> blocks -->
+    <mj-style inline="inline">
+      .nav a { color: #FFFFFF; text-decoration: none; }
+      .footer a { color: #FFFFFF; text-decoration: none; }
+      .legal-links a { color: #FFFFFF; text-decoration: underline; }
+    </mj-style>
+
+    <!-- Head-only: overrides MJML's inline styles, so it can't be inlined -->
+    <mj-style>
+      .pill-btn a { display: block !important; }
+    </mj-style>
+
+    <!-- Email preview text -->
+    <mj-preview>
+      New toys, cosy beds and treats your cat will actually approve of.
+    </mj-preview>
+  </mj-head>
+  <mj-body background-color="#FFF8F0">
+    <!-- Header: logo -->
+    <mj-section mj-class="dark" padding="24px 0 8px">
+      <mj-column>
+        <mj-text
+          align="center"
+          color="#FFFFFF"
+          font-size="28px"
+          font-weight="bold"
+          letter-spacing="1px"
+          line-height="34px"
+        >
+          Whisker &amp; Co.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Header: navigation (mj-group keeps links in one row on mobile) -->
+    <mj-section mj-class="dark" padding="0 0 16px">
+      <mj-group>
+        <mj-column>
+          <mj-text css-class="nav" mj-class="nav-link">
+            <a href="#">New In</a>
+          </mj-text>
+        </mj-column>
+        <mj-column>
+          <mj-text css-class="nav" mj-class="nav-link">
+            <a href="#">Toys</a>
+          </mj-text>
+        </mj-column>
+        <mj-column>
+          <mj-text css-class="nav" mj-class="nav-link">
+            <a href="#">Beds</a>
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+
+    <!-- Title text -->
+    <mj-section padding="32px 0 16px">
+      <mj-column>
+        <mj-text mj-class="center" font-size="32px" font-weight="bold" line-height="40px">
+          New in for curious cats
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Hero image -->
+    <mj-section padding="0">
+      <mj-column>
+        <mj-image
+          padding="0"
+          src="../images/photos/hero.jpg"
+          alt="Black and white cat sitting and looking at the camera"
+          href="#"
+        />
+      </mj-column>
+    </mj-section>
+
+    <!-- Intro line -->
+    <mj-section padding="16px 0">
+      <mj-column>
+        <mj-text mj-class="center" font-size="18px" line-height="26px" font-weight="bold">
+          Fresh toys, cosy beds and treats worth a slow blink.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Product grid: row 1 -->
+    <mj-section mj-class="grid-row">
+      <mj-column>
+        <mj-image
+          mj-class="grid-img"
+          src="../images/photos/grid-1-1.jpg"
+          alt="Cat playing with a ball toy"
+          href="#"
+        />
+      </mj-column>
+      <mj-column>
+        <mj-image
+          mj-class="grid-img"
+          src="../images/photos/grid-1-2.jpg"
+          alt="Cat curled up in a basket"
+          href="#"
+        />
+      </mj-column>
+      <mj-column>
+        <mj-image
+          mj-class="grid-img"
+          src="../images/photos/grid-1-3.jpg"
+          alt="Two cats sitting together"
+          href="#"
+        />
+      </mj-column>
+    </mj-section>
+
+    <!-- Product grid: row 2 -->
+    <mj-section mj-class="grid-row">
+      <mj-column>
+        <mj-image
+          mj-class="grid-img"
+          src="../images/photos/grid-2-1.jpg"
+          alt="Cat lying near a scratching post"
+          href="#"
+        />
+      </mj-column>
+      <mj-column>
+        <mj-image
+          mj-class="grid-img"
+          src="../images/photos/grid-2-2.jpg"
+          alt="Close-up of a cat's paw"
+          href="#"
+        />
+      </mj-column>
+    </mj-section>
+
+    <!-- Product grid: row 3 -->
+    <mj-section mj-class="grid-row">
+      <mj-column>
+        <mj-image
+          mj-class="grid-img"
+          src="../images/photos/grid-3-1.jpg"
+          alt="Cat enjoying a treat"
+          href="#"
+        />
+      </mj-column>
+      <mj-column>
+        <mj-image
+          mj-class="grid-img"
+          src="../images/photos/grid-3-2.jpg"
+          alt="Cat being groomed"
+          href="#"
+        />
+      </mj-column>
+      <mj-column>
+        <mj-image
+          mj-class="grid-img"
+          src="../images/photos/grid-3-3.jpg"
+          alt="Cat peeking out of a box"
+          href="#"
+        />
+      </mj-column>
+    </mj-section>
+
+    <!-- Call to action section -->
+    <mj-section padding="24px 0 32px">
+      <mj-column>
+        <mj-button
+          href="#"
+          mj-class="accent"
+          color="#FFFFFF"
+          font-size="16px"
+          font-weight="bold"
+          inner-padding="14px 48px"
+          border-radius="10px"
+          width="240px"
+        >
+          Shop now
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Shop by category -->
+    <mj-wrapper background-color="#3D3A4B" padding="24px 0">
+      <mj-section padding="0 0 12px">
+        <mj-column>
+          <mj-text mj-class="center" color="#FFFFFF" font-size="20px" line-height="28px">
+            Shop by category
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section mj-class="pill-row">
+        <mj-group>
+          <mj-column>
+            <mj-button mj-class="pill" href="#">
+              Toys
+            </mj-button>
+          </mj-column>
+          <mj-column>
+            <mj-button mj-class="pill" href="#">
+              Beds
+            </mj-button>
+          </mj-column>
+          <mj-column>
+            <mj-button mj-class="pill" href="#">
+              Scratchers
+            </mj-button>
+          </mj-column>
+        </mj-group>
+      </mj-section>
+      <mj-section mj-class="pill-row">
+        <mj-group>
+          <mj-column>
+            <mj-button mj-class="pill" href="#">
+              Treats
+            </mj-button>
+          </mj-column>
+          <mj-column>
+            <mj-button mj-class="pill" href="#">
+              Grooming
+            </mj-button>
+          </mj-column>
+          <mj-column>
+            <mj-button mj-class="pill" href="#">
+              Sale
+            </mj-button>
+          </mj-column>
+        </mj-group>
+      </mj-section>
+    </mj-wrapper>
+
+    <!-- Footer -->
+    <mj-wrapper mj-class="dark" padding="32px 0 24px">
+      <!-- Footer: quick links -->
+      <mj-section padding="0 12px 24px">
+        <mj-group>
+          <mj-column>
+            <mj-image
+              mj-class="footer-icon"
+              src="../images/icons/preferences.png"
+              alt=""
+              href="#"
+            />
+            <mj-text mj-class="footer-label">
+              <a href="#">Email preferences</a>
+            </mj-text>
+          </mj-column>
+          <mj-column>
+            <mj-image
+              mj-class="footer-icon"
+              src="../images/icons/app.png"
+              alt=""
+              href="#"
+            />
+            <mj-text mj-class="footer-label">
+              <a href="#">Our app</a>
+            </mj-text>
+          </mj-column>
+          <mj-column>
+            <mj-image
+              mj-class="footer-icon"
+              src="../images/icons/club.png"
+              alt=""
+              href="#"
+            />
+            <mj-text mj-class="footer-label">
+              <a href="#">Join our club</a>
+            </mj-text>
+          </mj-column>
+          <mj-column>
+            <mj-image
+              mj-class="footer-icon"
+              src="../images/icons/discount.png"
+              alt=""
+              href="#"
+            />
+            <mj-text mj-class="footer-label">
+              <a href="#">All discounts</a>
+            </mj-text>
+          </mj-column>
+        </mj-group>
+      </mj-section>
+
+      <!-- Footer: social -->
+      <mj-section padding="0 0 16px">
+        <mj-column>
+          <mj-social icon-size="28px" mode="horizontal">
+            <mj-social-element background-color="#1F6F6B" name="facebook-noshare" href="#" />
+            <mj-social-element background-color="#1F6F6B" name="instagram" href="#" />
+            <mj-social-element background-color="#1F6F6B" name="youtube" href="#" />
+            <mj-social-element background-color="#1F6F6B" name="pinterest-noshare" href="#" />
+          </mj-social>
+        </mj-column>
+      </mj-section>
+
+      <!-- Footer: legal -->
+      <mj-section padding="0 24px">
+        <mj-column>
+          <mj-text mj-class="legal-text center">
+            Whisker &amp; Co. Ltd. · Calle Ejemplo 12, 28001 Madrid, Spain. You’re
+            receiving this email because you signed up for Whisker &amp; Co. news and offers.
+          </mj-text>
+          <mj-text mj-class="legal-text center" css-class="legal-links">
+            <a href="#">Help &amp; Contact</a> •
+            <a href="#">Privacy Policy</a> •
+            <a href="#">Unsubscribe</a>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+  </mj-body>
+</mjml>

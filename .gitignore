@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+._*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Node (if a package.json is added later)
+node_modules/
+npm-debug.log*
+
+# Environment / secrets (e.g. Mailtrap credentials)
+.env
+.env.*
+
+# Scratch / design exports not meant for the repo
+*.fig
+tmp/
+
+# Local Claude Code instructions
+CLAUDE.md
